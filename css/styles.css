@@ -41,7 +41,7 @@ button {
     color: var(--color-dark);
     border: none;
     border-radius: 10px;
-    padding: 10px 25px;
+    padding: 9px 25px 11px 25px;
     cursor: pointer;
     font-size: 16px;
     transition: all 0.3s ease 0s;
@@ -79,10 +79,10 @@ nav {
         transition: all 0.3s ease 0s;
     }
     a:hover {
-        font-weight: 400;
+        font-weight: 500;
     }
     a.active {
-        font-weight: 400;
+        font-weight: 500;
         border-bottom: 3px solid var(--color-light);
     }
 }
@@ -91,10 +91,11 @@ nav {
 #home-title {
     width: 1200px;
     position: absolute;
-    top: 300px;
+    top: 260px;
     img {
-        top: -200px;
-        left: 50px;
+        pointer-events: none;
+        user-select: none;
+        top: -160px;
         width: 850px;
         opacity: 0.4;
         position: absolute;
@@ -103,6 +104,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: end;
+        margin-right: 50px;
         h1 {
             font-size: 94px;
             padding: 0;
@@ -115,16 +117,41 @@ nav {
         }
         p {
             text-align: right;
-            width: 40%;
-            margin-block: 40px 30px;
+            width: 42%;
+            margin-block: 45px 30px;
         }
         button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            white-space: nowrap;
             background-color: var(--color-accent-red);
             color: var(--color-light);
+            width: 260px;
             font-weight: 400;
             height: 50px;
             border-radius: 25px;
             margin-right: 10px;
+            text-indent: 15px;
+            span {
+                margin-top: -7px;
+                font-size: 40px;
+                opacity: 0;
+                transition: all 0.3s ease 0s;
+            }
+        }
+        button:hover {
+            font-weight: 600;
+            text-indent: 0px;
+            transform: scale(1.05);
+            span {
+                opacity: 1;
+            }
+        }
+        button:active {
+            background-color: #c03030;
+            color: #c0c0c0;
+            transform: scale(1.02) translateY(4px);
         }
     }
 }
