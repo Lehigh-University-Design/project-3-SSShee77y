@@ -27,5 +27,5 @@ function waterManager() {
 }
 
 function resetRaindropPosition(raindrop) {
-    raindrop.style.left = `${Math.random() * 160}vw`;
+    raindrop.style.left = `${Math.random() * 130}vw`;
 }
