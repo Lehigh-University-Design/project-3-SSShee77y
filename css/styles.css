@@ -25,19 +25,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
 }
 
 p, a, button, input, ul, ol, li {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
-}
-
-img {
-    border: 4px solid var(--color-light);
 }
 
 button {
@@ -45,7 +41,7 @@ button {
     color: var(--color-dark);
     border: none;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 10px 25px;
     cursor: pointer;
     font-size: 16px;
     transition: all 0.3s ease 0s;
@@ -57,8 +53,80 @@ button {
     align-items: center;
     height: auto;
     width: 100%;
+    max-width: 1200px;
     margin: auto;
     transition: all 0.3s ease 0s;
+}
+
+nav {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    h1 {
+        font-size: 36px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        padding: 0 10px;
+        margin: 0;
+    }
+    a {
+        font-size: 18px;
+        color: var(--color-light);
+        padding: 4px 10px;
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+    }
+    a:hover {
+        font-weight: 400;
+    }
+    a.active {
+        font-weight: 400;
+        border-bottom: 3px solid var(--color-light);
+    }
+}
+
+/* Home stuff */
+#home-title {
+    width: 1200px;
+    position: absolute;
+    top: calc(50% - 150px);
+    img {
+        top: -200px;
+        left: 50px;
+        width: 850px;
+        opacity: 0.4;
+        position: absolute;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        h1 {
+            font-size: 94px;
+            padding: 0;
+            margin: 0;
+        }
+        h2 {
+            font-size: 18px;
+            padding: 0 5px 0 0;
+            margin: -22px 0 0 0;
+        }
+        p {
+            text-align: right;
+            width: 40%;
+            margin-block: 40px 30px;
+        }
+        button {
+            background-color: var(--color-accent-red);
+            color: var(--color-light);
+            font-weight: 400;
+            height: 50px;
+            border-radius: 25px;
+            margin-right: 10px;
+        }
+    }
 }
 
 
