@@ -1,2 +1,2 @@
-# starter
-Basic Starter Repository
+# D.B Cooper
+The website seeks to delve into the enigmatic story of D.B. Cooper, one of the most infamous pop culture icons and notorious criminals in American history. Through comprehensive research, captivating visuals, and an immersive design, the website will provide visitors a chance to explore the captivating narrative of the 1971 hijacking, the subsequent investigations, and the enduring quest to uncover Cooper's true identity or fate.
