@@ -18,6 +18,7 @@ body {
     color: var(--color-main-light);
     margin: 0;
     padding: 0;
+    overflow: hidden;
     transition: all 0.3s ease 0s;
 }
 
@@ -58,4 +59,25 @@ button {
     width: 100%;
     margin: auto;
     transition: all 0.3s ease 0s;
+}
+
+
+/* Raindrops */
+.raindrop {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 120px; 
+    background-color: #A0A0A0;
+    opacity: 0.4;
+    animation: rain 1s linear infinite;
+}
+
+@keyframes rain {
+    0% {
+        transform: rotate(20deg) translate(-10vh, -100%);
+    }
+    100% {
+        transform: rotate(20deg) translate(-10vh, 120vh);
+    }
 }
