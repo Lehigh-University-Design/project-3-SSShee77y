@@ -6,6 +6,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js"></script>
+    <!-- Mapbox Links -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet'/>
     <title>D.B. Cooper</title>
 </head>
 <body>
@@ -67,6 +70,35 @@
                 <div class="line"></div>
             </div>
         </div>
+        
+        <div id='map' style='width: calc(100vw); height: calc(100vh - 180px);'></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiY29kaW5nYWxlbGVvMjYiLCJhIjoiY2x1anNxcGNnMGQ0ZzJucjBkc3M3Nml3eCJ9.ZLAvpZ2wIAw8jPVbgcKIFA';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/codingaleleo26/clublyh0k01x601nwb3f6ci8i'
+                
+            });
+
+            map.on('load', () => {
+                map.addSource('poi', {
+                    type: 'geojson',
+                    data: './geodata/features.geojson'
+                });
+
+                map.addLayer({
+                    'id': 'points-of-interest',
+                    'type': 'circle',
+                    'source': 'poi',
+                    'paint': {
+                        'circle-radius': 4,
+                        'circle-stroke-width': 2,
+                        'circle-color': '#808080',
+                        'circle-stroke-color': '#eeeeee'
+                    }
+                });
+            });
+        </script>
 
     </div>
     <div id="storm-container"></div>

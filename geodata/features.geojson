@@ -1,0 +1,147 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Seattle–Tacoma International Airport"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.302697,
+          47.44357
+        ],
+        "type": "Point"
+      },
+      "id": "0b04863beaebbbed6f4ac591a545eb79"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Reno–Tahoe International Airport"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.771395,
+          39.499964
+        ],
+        "type": "Point"
+      },
+      "id": "24e0203961cabeba0c3cf6550d101a20"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flight Path (Seattle to Reno)"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            -122.702766,
+            46.206704
+          ],
+          [
+            -122.578078,
+            45.953101
+          ],
+          [
+            -122.591431,
+            45.79762
+          ],
+          [
+            -122.582783,
+            45.728895
+          ],
+          [
+            -122.606925,
+            45.692673
+          ],
+          [
+            -122.691424,
+            45.640777
+          ],
+          [
+            -122.725724,
+            45.590594
+          ],
+          [
+            -122.684772,
+            45.54341
+          ],
+          [
+            -122.705499,
+            45.488295
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "58cb47bbc33d113018f97cba41575f9b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Portland International Airport"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.594157,
+          45.589328
+        ],
+        "type": "Point"
+      },
+      "id": "b76c62d0997c0ebe4b8bfe5f5e3f0460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Suspected Drop Zone"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -122.614711,
+              45.960582
+            ],
+            [
+              -122.510165,
+              46.024909
+            ],
+            [
+              -122.479176,
+              46.022341
+            ],
+            [
+              -122.483648,
+              45.907456
+            ],
+            [
+              -122.598182,
+              45.849418
+            ],
+            [
+              -122.614711,
+              45.960582
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "c0f09ae9ea6dcb0d8ce91e6339278369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tina Bar"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.759448,
+          45.717543
+        ],
+        "type": "Point"
+      },
+      "id": "c31b80df6365390ff6817c138083379f"
+    }
+  ],
+  "type": "FeatureCollection"
+}
