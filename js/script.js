@@ -39,7 +39,7 @@ function setFader(fadeAmount) {
 
 function fadeToRedirect(link) {
     setFader(1);
-    setTimeout(function() {redirect(link);}, 1500);
+    setTimeout(function() {redirect(link);}, 1200);
 }
 
 function redirect(link) {
