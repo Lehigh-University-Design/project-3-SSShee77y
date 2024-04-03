@@ -45,3 +45,12 @@ function fadeToRedirect(link) {
 function redirect(link) {
     window.location.href = link;
 }
+
+/*
+ *  Navbar
+ */
+
+function toggleSidebar() {
+    let sidenav = document.getElementById("side-nav");
+    sidenav.classList.toggle("side-nav-open");
+}

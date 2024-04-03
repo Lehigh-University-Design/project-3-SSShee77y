@@ -16,7 +16,14 @@
 
     <div class="content">
         <header>
-            <nav>
+            <nav id="side-nav">
+                <a href="#" onclick="fadeToRedirect('index.html')">Home</a>
+                <a href="#" class="active">Timeline</a>
+                <a href="#" onclick="fadeToRedirect('suspects.html')">Suspects</a>
+                <a href="#" onclick="fadeToRedirect('evidence.html')">Evidence</a>
+                <a href="#" onclick="fadeToRedirect('legacy.html')">Legacy</a>
+            </nav>
+            <nav id="wide-nav">
                 <h1>D.B. Cooper</h1>
                 <a href="#" onclick="fadeToRedirect('index.html')">Home</a>
                 <a href="#" class="active">Timeline</a>
@@ -24,6 +31,9 @@
                 <a href="#" onclick="fadeToRedirect('evidence.html')">Evidence</a>
                 <a href="#" onclick="fadeToRedirect('legacy.html')">Legacy</a>
             </nav>
+            <a href="#" id="nav-button" onclick="toggleSidebar()">
+                <img id="nav-icon" src="images/nav-dropdown-icon.svg" width="30px">
+            </a>
         </header>
 
         <div id="timeline-container">
@@ -72,7 +82,7 @@
             </div>
         </div>
         
-        <div id='map' style='width: calc(100vw); height: calc(100vh - 180px);'></div>
+        <div id='map' style='width: calc(100vw); height: calc(100vh - 170px);'></div>
         <script src="js/mapManager.js"></script>
 
     </div>

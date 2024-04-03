@@ -14,7 +14,14 @@
 
     <div class="content">
         <header>
-            <nav>
+            <nav id="side-nav">
+                <a href="#" class="active">Home</a>
+                <a href="#" onclick="fadeToRedirect('timeline.html')">Timeline</a>
+                <a href="#" onclick="fadeToRedirect('suspects.html')">Suspects</a>
+                <a href="#" onclick="fadeToRedirect('evidence.html')">Evidence</a>
+                <a href="#" onclick="fadeToRedirect('legacy.html')">Legacy</a>
+            </nav>
+            <nav id="wide-nav">
                 <h1>D.B. Cooper</h1>
                 <a href="#" class="active">Home</a>
                 <a href="#" onclick="fadeToRedirect('timeline.html')">Timeline</a>
@@ -22,6 +29,9 @@
                 <a href="#" onclick="fadeToRedirect('evidence.html')">Evidence</a>
                 <a href="#" onclick="fadeToRedirect('legacy.html')">Legacy</a>
             </nav>
+            <a href="#" id="nav-button" onclick="toggleSidebar()">
+                <img id="nav-icon" src="images/nav-dropdown-icon.svg" width="30px">
+            </a>
         </header>
 
         <div id="home-title">
