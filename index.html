@@ -67,10 +67,12 @@
                 fadeOverlay = document.getElementById('fade-overlay');
 
                 cooperImage.style.zIndex = '9999';
-                cooperImage.style.opacity = '0.8';
+                cooperImage.style.opacity = '0.9';
                 cooperImage.style.transition = 'all 0.8s ease-in 0s';
                 ctaButton.style.zIndex = '9998';
                 ctaButton.style.textIndent = '0';
+                ctaButton.style.transition = 'all 0.8s ease-in 0s';
+                ctaButton.style.backgroundColor = 'transparent';
                 ctaButton.style.pointerEvents = 'none';
                 ctaButton.children[0].style.opacity = '1';
                 fadeOverlay.classList.toggle("red-fade");
