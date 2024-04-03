@@ -1,6 +1,7 @@
 
 window.addEventListener('load', function () {
     waterManager();
+    setFader(0);
 });
 
 /* Wet weather manager */
@@ -27,5 +28,20 @@ function waterManager() {
 }
 
 function resetRaindropPosition(raindrop) {
-    raindrop.style.left = `${Math.random() * 130}vw`;
+    randomValue = Math.random();
+    raindrop.style.left = `calc(${randomValue * 100}vw + ${randomValue * 50}vh`;
+}
+
+function setFader(fadeAmount) {
+    const fadeOverlay = document.getElementById('fade-overlay');
+    fadeOverlay.style.opacity = fadeAmount;
+}
+
+function fadeToRedirect(link) {
+    setFader(1);
+    setTimeout(function() {redirect(link);}, 1500);
+}
+
+function redirect(link) {
+    window.location.href = link;
 }
