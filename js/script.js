@@ -6,7 +6,7 @@ window.addEventListener('load', function () {
 
 /* Wet weather manager */
 function waterManager() {
-    const numRaindrops = 50;
+    const numRaindrops = screen.width / 50 + 5;
     const rainContainer = document.getElementById('storm-container');
 
     for (let i = 0; i < numRaindrops; i++) {

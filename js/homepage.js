@@ -27,7 +27,7 @@ function homeCTAButton() {
     ctaButton = document.getElementById('home-button')
     fadeOverlay = document.getElementById('fade-overlay');
 
-    cooperImage.style.zIndex = '9999';
+    cooperImage.parentElement.style.zIndex = '9999';
     cooperImage.style.opacity = '0.9';
     cooperImage.style.transition = 'all 0.8s ease-in 0s';
     ctaButton.style.zIndex = '9998';
