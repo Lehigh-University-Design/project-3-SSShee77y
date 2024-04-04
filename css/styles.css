@@ -23,17 +23,25 @@
 }
 
 #fade-overlay {
-    position: absolute;
+    position: fixed;
     pointer-events: none;
     user-select: none;
     z-index: 999;
     top: 0;
     left: 0;
     background-color: var(--color-dark);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     opacity: 1;
     transition: all 1s ease-in 0s;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -75,6 +83,13 @@ button {
 
 /* Raindrops */
 #storm-container {
+    pointer-events: none;
+    user-select: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -127,7 +142,7 @@ nav {
 }
 
 #wide-nav {
-    margin: 30px 20px 20px 20px;
+    margin: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -142,7 +157,7 @@ nav {
     left: -300px;
     height: 100%;
     /* width: 140px; */
-    padding: 100px 20px 20px 20px;
+    padding: 80px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     white-space: nowrap;
@@ -160,8 +175,8 @@ nav {
     user-select: none;
     z-index: 3;
     opacity: 0;
-    top: 40px;
-    left: 35px;
+    top: 30px;
+    left: 20px;
     position: absolute;
     transition: all 0.5s ease 0s;
 }
@@ -243,6 +258,7 @@ nav {
 #timeline-container {
     display: flex;
     width: 500px;
+    max-width: 100%;
     overflow-x: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -261,7 +277,7 @@ nav {
 #timeline-container::after {
     content: '';
     position: absolute;
-    margin-left: 350px;
+    margin-left: calc(min(500px, 100%) - 150px);
     width: 150px;
     height: 120px;
     background: linear-gradient(to left, var(--color-dark) 5%, transparent);
@@ -302,6 +318,91 @@ nav {
     }
 }
 
+/* Suspects Page */
+#cooper-bulletin {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: fit-content;
+    padding-block: 40px 30px;
+    column-gap: 80px;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: var(--color-light);
+    img {
+        width: 320px;
+        max-width: 75%;
+    }
+    div {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            color: var(--color-dark);
+            font-size: 36px;
+            padding: 0;
+            margin: 0;
+        }
+        li, p {
+            color: var(--color-dark);
+            line-height: 28px;
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            margin-left: 20px;
+        }
+    }
+}
+
+#suspect-grid {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin: 50px;
+    grid-row-gap: 60px;
+    grid-column-gap: 50px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    h2 {
+        font-size: 32px;
+        font-weight: 350;
+        grid-column: span 3;
+        margin: 30px 0 -15px 0;
+    }
+    h3, p {
+        color: var(--color-dark);
+        padding: 0;
+        margin: 0;
+    }
+    h3 {
+        font-weight: 500;
+        font-size: 23px;
+        margin-block: 20px 15px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+
+.suspect-bulletin {
+    padding: 50px 20px;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-light);
+    transition: all 0.3s ease 0s;
+    img {
+        height: 260px;
+    }
+}
+
+
 /* Map */
 #map::after {
     /* box-shadow: inset 0 0 500px 1px var(--color-main-dark) !important; */
@@ -318,11 +419,23 @@ nav {
                 radial-gradient(transparent 40%, var(--color-dark) 120%);
 }
 
+/* Intermediate Viewport */
+@media only screen and (max-width: 1300px) {
+    #suspect-grid {
+        grid-template-columns: 1fr 1fr;
+        h2 {
+            grid-column: span 2;
+        }
+    }
+}
+
 /* Mobile Viewport */
 @media only screen and (max-width: 1000px) {
     #wide-nav {
-        margin-left: calc(50% - 120px);
+        /* overflow: hidden; */
+        margin-left: calc(50% - 110px);
         a {
+            display: none;
             opacity: 0;
         }
     }
@@ -335,5 +448,23 @@ nav {
     #nav-icon {
         pointer-events: auto;
         opacity: 1;
+    }
+
+    /* Timeline */
+    
+    #timeline {
+
+    }
+
+    /* Suspects */
+    #cooper-bulletin {
+        flex-direction: column;
+    }
+    
+    #suspect-grid {
+        grid-template-columns: 1fr;
+        h2 {
+            grid-column: span 1;
+        }
     }
 }

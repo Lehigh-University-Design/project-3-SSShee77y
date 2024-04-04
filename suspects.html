@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <script src="js/homepage.js"></script>
+    <title>D.B. Cooper</title>
+</head>
+<body style="overflow-y: auto">
+    <div id="fade-overlay"></div>
+
+    <div class="content">
+        <header>
+            <nav id="side-nav">
+                <a href="#" onclick="fadeToRedirect('index.html')">Home</a>
+                <a href="#" onclick="fadeToRedirect('timeline.html')">Timeline</a>
+                <a href="#" class="active">Suspects</a>
+                <a href="#" onclick="fadeToRedirect('evidence.html')">Evidence</a>
+                <a href="#" onclick="fadeToRedirect('legacy.html')">Legacy</a>
+            </nav>
+            <nav id="wide-nav">
+                <h1>D.B. Cooper</h1>
+                <a href="#" onclick="fadeToRedirect('index.html')">Home</a>
+                <a href="#" onclick="fadeToRedirect('timeline.html')">Timeline</a>
+                <a href="#" class="active">Suspects</a>
+                <a href="#" onclick="fadeToRedirect('evidence.html')">Evidence</a>
+                <a href="#" onclick="fadeToRedirect('legacy.html')">Legacy</a>
+            </nav>
+            <a href="#" id="nav-button" onclick="toggleSidebar()">
+                <img id="nav-icon" src="images/nav-dropdown-icon.svg" width="30px">
+            </a>
+        </header>
+
+        <div id="cooper-bulletin">
+            <img src="images/suspect-cooper-composite.svg">
+            <div>
+                <h2>D.B. Cooper ("Dan Cooper")</h2>
+                <ul>
+                    <li>Age:</li>
+                    <p> Mid 40s.</li>
+                    <li>Physical Appearance:</li>
+                    <p> Caucasian, 5'10" to 6' tall, 170 to 180 pounds.</li>
+                    <li>Attire:</li>
+                    <p> Dark suit, dress shirt, clip-on tie, dark sunglasses.</li>
+                    <li>Demeanor:</li>
+                    <p> Calm, polite, composed.</li>
+                    <li>Communication:</li>
+                    <p> Articulate, clear instructions via written notes.</p>
+                    <li>Aviation Knowledge:</li>
+                    <p> Some familiarity with aircraft or military procedure.</li>
+                    <li>Criminal Background:</li>
+                    <p> Possibly.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="suspect-grid">
+            <h2>The Suspects</h2>
+            <div class="suspect-bulletin">
+                <img src="images/suspect-mccoy.svg">
+                <h3>Richard<br>McCoy Jr.</h3>
+                <p>McCoy hijacked a plane in 1972 using a similar method to Cooper's and was arrested.
+                    Some believed he could be Cooper, but he was killed in a shootout with law enforcement in 1974.</p>
+            </div>
+            <div class="suspect-bulletin">
+                <img src="images/suspect-rackstraw.svg">
+                <h3>Robert<br>Rackstraw</h3>
+                <p>A Vietnam War veteran with a criminal record who boasted about being Cooper.
+                    Investigators looked into him extensively but found insufficient evidence to charge him.</p>
+            </div>
+            <div class="suspect-bulletin">
+                <img src="images/suspect-weber.svg">
+                <h3>Duane<br>Weber</h3>
+            </div>
+            <div class="suspect-bulletin">
+                <img src="images/suspect-christiansen.svg">
+                <h3>Kenneth<br>Christiansen</h3>
+            </div>
+            <div class="suspect-bulletin">
+                <img src="images/suspect-smith.svg">
+                <h3>William J.<br>Smith</h3>
+            </div>
+            <div class="suspect-bulletin">
+                <img src="images/suspect-dayton.svg">
+                <h3>Barbara<br>Dayton</h3>
+            </div>
+        </div>
+
+    </div>
+    <div id="storm-container"></div>
+</body>
+</html>
