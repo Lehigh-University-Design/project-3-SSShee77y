@@ -1,10 +1,33 @@
-
 window.addEventListener('load', function () {
     waterManager();
     setFader(0);
 });
 
-/* Wet weather manager */
+/*
+ *  Lookup Map Reader
+ */
+
+// Main function to read IDs, match with info, and display
+function getInfoForID(id) {
+    let header = idMap.get(id); 
+    let body = '';
+
+    // Match IDs and display info
+    if (header != undefined) {
+        body = infoMap.get(header);
+        if (body != undefined) {
+            console.log(header);
+            console.log(body);
+        }
+    }
+
+    return [header, body];
+}
+
+/*
+ *  Wet Weather Manager
+ */
+
 function waterManager() {
     const numRaindrops = screen.width / 50 + 5;
     const rainContainer = document.getElementById('storm-container');
@@ -32,6 +55,10 @@ function resetRaindropPosition(raindrop) {
     raindrop.style.left = `calc(${randomValue * 100}vw + ${randomValue * 50}vh`;
 }
 
+/*
+ *  Fader and Redirects
+ */
+
 function setFader(fadeAmount) {
     const fadeOverlay = document.getElementById('fade-overlay');
     fadeOverlay.style.opacity = fadeAmount;
@@ -39,7 +66,7 @@ function setFader(fadeAmount) {
 
 function fadeToRedirect(link) {
     setFader(1);
-    setTimeout(function() {redirect(link);}, 1200);
+    setTimeout(function() {redirect(link);}, 610);
 }
 
 function redirect(link) {
