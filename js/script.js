@@ -4,27 +4,6 @@ window.addEventListener('load', function () {
 });
 
 /*
- *  Lookup Map Reader
- */
-
-// Main function to read IDs, match with info, and display
-function getInfoForID(id) {
-    let header = idMap.get(id); 
-    let body = '';
-
-    // Match IDs and display info
-    if (header != undefined) {
-        body = infoMap.get(header);
-        if (body != undefined) {
-            console.log(header);
-            console.log(body);
-        }
-    }
-
-    return [header, body];
-}
-
-/*
  *  Wet Weather Manager
  */
 
