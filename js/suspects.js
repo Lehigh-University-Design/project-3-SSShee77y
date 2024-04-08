@@ -10,13 +10,23 @@ for (let i = 0; i < suspectsIDs.length; i++) {
 
 function popUpInfo(id) {
     let popup = document.getElementById('info-popup');
+    let popupGrid = popup.querySelector('div');
+
     let suspectInfo = getInfoForID(id);
     let suspectName = suspectInfo[0].split('<br>')[0] + ' ' + suspectInfo[0].split('<br>')[1];
-    popup.querySelector('h3').innerHTML = suspectName;
-    popup.querySelector('img').src = suspectInfo[1][0];
-    popup.querySelector('p').innerHTML = suspectInfo[1][1];
+    popupGrid.querySelector('h3').innerHTML = suspectName;
+    popupGrid.querySelector('img').src = suspectInfo[1][0];
+    popupGrid.querySelector('p').innerHTML = suspectInfo[1][1];
+
+    popup.style.opacity = 1;
+    popup.classList.toggle('ignore');
+    document.body.style.overflowY = 'hidden';
 }
 
 function closePopUp() {
     let popup = document.getElementById('info-popup');
+
+    popup.style.opacity = 0;
+    popup.classList.toggle('ignore');
+    document.body.style.overflowY = 'auto';
 }
