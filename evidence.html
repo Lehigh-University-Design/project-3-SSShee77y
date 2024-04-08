@@ -17,74 +17,51 @@
             <nav id="side-nav">
                 <a href="#" onclick="fadeToRedirect('index.html')">Home</a>
                 <a href="#" onclick="fadeToRedirect('timeline.html')">Timeline</a>
-                <a href="#" class="active">Suspects</a>
-                <a href="#" onclick="fadeToRedirect('evidence.html')">Evidence</a>
+                <a href="#" onclick="fadeToRedirect('suspects.html')">Suspects</a>
+                <a href="#" class="active">Evidence</a>
                 <a href="#" onclick="fadeToRedirect('legacy.html')">Legacy</a>
             </nav>
             <nav id="wide-nav">
                 <h1>D.B. Cooper</h1>
                 <a href="#" onclick="fadeToRedirect('index.html')">Home</a>
                 <a href="#" onclick="fadeToRedirect('timeline.html')">Timeline</a>
-                <a href="#" class="active">Suspects</a>
-                <a href="#" onclick="fadeToRedirect('evidence.html')">Evidence</a>
+                <a href="#" onclick="fadeToRedirect('suspects.html')">Suspects</a>
+                <a href="#" class="active">Evidence</a>
                 <a href="#" onclick="fadeToRedirect('legacy.html')">Legacy</a>
             </nav>
             <a href="#" id="nav-button" onclick="toggleSidebar()">
                 <img id="nav-icon" src="images/nav-dropdown-icon.svg" width="30px">
             </a>
         </header>
-
-        <div id="cooper-bulletin">
-            <img src="images/suspect-cooper-composite.svg">
-            <div>
-                <h2>D.B. Cooper ("Dan Cooper")</h2>
-                <ul>
-                    <li>Age:</li>
-                    <p> Mid 40s.</li>
-                    <li>Physical Appearance:</li>
-                    <p> Caucasian, 5'10" to 6' tall, 170 to 180 pounds.</li>
-                    <li>Attire:</li>
-                    <p> Dark suit, dress shirt, clip-on tie, dark sunglasses.</li>
-                    <li>Demeanor:</li>
-                    <p> Calm, polite, composed.</li>
-                    <li>Communication:</li>
-                    <p> Articulate, clear instructions via written notes.</p>
-                    <li>Aviation Knowledge:</li>
-                    <p> Some familiarity with aircraft or military procedure.</li>
-                    <li>Criminal Background:</li>
-                    <p> Possibly.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="suspect-grid">
+        
+        <div id="evidence-grid">
             <h2>The Suspects</h2>
-            <div id="mccoy" class="suspect-bulletin" onclick="popUpInfo('mccoy')">
+            <div id="blacktie" class="evidence-bulletin" onclick="popUpInfo('blacktie')">
                 <img src="images/suspect-mccoy.svg">
                 <h3>Richard<br>McCoy Jr.</h3>
                 <p></p>
             </div>
-            <div id="rackstraw" class="suspect-bulletin" onclick="popUpInfo('rackstraw')">
+            <div id="hair" class="evidence-bulletin" onclick="popUpInfo('hair')">
                 <img src="images/suspect-rackstraw.svg">
                 <h3>Robert<br>Rackstraw</h3>
                 <p></p>
             </div>
-            <div id="weber" class="suspect-bulletin"onclick="popUpInfo('weber')">
+            <div id="cigars" class="evidence-bulletin"onclick="popUpInfo('cigars')">
                 <img src="images/suspect-weber.svg">
                 <h3>Duane<br>Weber</h3>
                 <p></p>
             </div>
-            <div id="christiansen" class="suspect-bulletin" onclick="popUpInfo('christiansen')">
+            <div id="parachutes" class="evidence-bulletin" onclick="popUpInfo('parachutes')">
                 <img src="images/suspect-christiansen.svg">
                 <h3>Kenneth<br>Christiansen</h3>
                 <p></p>
             </div>
-            <div id="smith" class="suspect-bulletin" onclick="popUpInfo('smith')">
+            <div id="placard" class="evidence-bulletin" onclick="popUpInfo('placard')">
                 <img src="images/suspect-smith.svg">
                 <h3>William J.<br>Smith</h3>
                 <p></p>
             </div>
-            <div id="dayton" class="suspect-bulletin" onclick="popUpInfo('dayton')">
+            <div id="ransommoney" class="evidence-bulletin" onclick="popUpInfo('ransommoney')">
                 <img src="images/suspect-dayton.svg">
                 <h3>Barbara<br>Dayton</h3>
                 <p></p>
@@ -99,7 +76,7 @@
             </div>
         </div>
         
-        <script src="js/suspects.js"></script>
+        <script src="js/evidence.js"></script>
 
     </div>
     <div id="storm-container"></div>

@@ -23,9 +23,18 @@ const idMap = new Map([
     ['christiansen', 'Kenneth<br>Christiansen'],
     ['smith', 'William J.<br>Smith'],
     ['dayton', 'Barbara<br>Dayton'],
+
+    // Evidence
+    ['blacktie', 'Black clip-on tie'],
+    ['hair', 'Hair samples'],
+    ['cigars', 'Cigarette butts'],
+    ['parachutes', 'Recovered parachutes'],
+    ['placard', '727 instruction placard'],
+    ['ransommoney', 'Recovered ransom money'],
 ]);
 
 const infoMap = new Map([
+    // Suspects
     ['Richard<br>McCoy Jr.',
         ['images/suspect-mccoy.svg',
         'McCoy hijacked a plane in 1972 using a similar method to Cooper\'s and was arrested. Some believed he could be Cooper, but he was killed in a shootout with law enforcement in 1974.'
@@ -74,4 +83,30 @@ const infoMap = new Map([
         + '<li>Vestibulum libero</li>'
         + '<li>Dapibus luctus</li></ul>'
         + 'Donec iaculis, risus et sagittis posuere, magna tellus sollicitudin nulla, quis convallis leo augue vel tellus. Maecenas libero magna, finibus commodo elit gravida, vestibulum tristique massa. Maecenas vehicula vehicula euismod. Vestibulum pretium sed eros laoreet accumsan.']],
-])
+
+    // Evidence
+    
+    ['Black clip-on tie',
+        ['images/evidence-black-tie.svg',
+        'FBI agents found a black clip-on necktie in seat 18-E, where Cooper had been seated. Attached to the tie was a gold tie-clip with a circular mother-of-pearl setting in the center of the clip. The FBI built a partial DNA profile from samples found on Cooper\'s tie by 2001.']],
+    ['Hair samples',
+        [,
+            
+        ]],
+    ['Cigarette butts',
+        [,
+            
+        ]],
+    ['Recovered parachutes',
+        ['images/evidence-parachute-bag.svg',
+            
+        ]],
+    ['727 instruction placard',
+        ['images/evidence-placard.svg',
+            
+        ]],
+    ['Recovered ransom money',
+        ['images/evidence-singular-bill.svg',
+            
+        ]],
+]);
