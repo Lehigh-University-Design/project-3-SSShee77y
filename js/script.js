@@ -58,7 +58,16 @@ function redirect(link) {
 
 function toggleSidebar() {
     let sidenav = document.getElementById("side-nav");
+    let navIcon = document.getElementById("nav-icon");
     sidenav.classList.toggle("side-nav-open");
+
+    if (sidenav.classList.contains("side-nav-open")) {
+        navIcon.src = "images/nav-close-icon.svg";
+        navIcon.style.transform = 'translateY(0px) rotate(270deg)';
+    } else {
+        navIcon.src = "images/nav-dropdown-icon.svg";
+        navIcon.style.transform = '';
+    }
 }
 
 /*
