@@ -102,6 +102,6 @@ const infoMap = new Map([
         ['images/evidence-placard.svg',
         'In November 1978, a hunter found the 727\'s instruction placard for lowering the aft airstair. The placard was found near a logging road about 13 miles (21 km) east of Castle Rock, Washington, and north of Lake Merwin, within Flight 305\'s basic flight path']],
     ['Recovered ransom money',
-        ['images/evidence-singular-bill.svg',
+        ['images/evidence-tina-bar-money.svg',
         'On February 10, 1980, eight-year-old Brian Ingram was vacationing with his family on the Columbia River at a location called Tina Bar. The ransom money had matching serial numbers and totaled to $5,880. However, the money raised far more questions than it answered.']],
 ]);

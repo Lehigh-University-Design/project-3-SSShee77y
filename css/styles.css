@@ -500,7 +500,7 @@ nav {
     flex-direction: column;
     place-items: center;
     margin: 50px;
-    gap: 50px;
+    gap: 0px;
     text-align: center;
     transition: all 0.3s ease 0s;
     h2 {
@@ -528,7 +528,7 @@ nav {
 }
 
 .evidence-bulletin {
-    padding: 50px 20px;
+    padding: 0px 20px;
     width: 900px;
     max-width: calc(90vw - 20px);
     /* height: 150px; */
@@ -536,7 +536,7 @@ nav {
     grid-template-rows: fit-content() fit-content();
     grid-template-columns: 1fr 4fr;
     text-align: left;
-    column-gap: 40px;
+    column-gap: 30px;
     text-overflow: ellipsis;
     overflow: hidden;
     cursor: pointer;
