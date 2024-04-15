@@ -88,6 +88,29 @@ button {
     opacity: 0;
 }
 
+/* String map */
+#string-map {
+    pointer-events: none;
+    user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.string {
+    position: absolute;
+    overflow: hidden;
+    left: -50%;
+    width: 200%;
+    height: 5px; 
+    background-color: #ff4040;
+    opacity: 0.4;
+}
+
 /* Raindrops */
 #storm-container {
     pointer-events: none;
@@ -516,6 +539,15 @@ nav {
         height: 100%;
         grid-row: span 2;
         align-self: center;
+    }
+}
+.evidence-bulletin:nth-child(odd) {
+    grid-template-columns: 4fr 1fr;
+    img {
+        order: 1;
+    }
+    p {
+        order: 2;
     }
 }
 

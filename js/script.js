@@ -1,6 +1,7 @@
 window.addEventListener('load', function () {
     waterManager();
     setFader(0);
+    randomStringMap();
 });
 
 /*
@@ -30,7 +31,7 @@ function waterManager() {
 }
 
 function resetRaindropPosition(raindrop) {
-    randomValue = Math.random();
+    let randomValue = Math.random();
     raindrop.style.left = `calc(${randomValue * 100}vw + ${randomValue * 50}vh`;
 }
 
@@ -95,4 +96,26 @@ function closePopUp() {
     popup.style.opacity = 0;
     popup.classList.toggle('ignore');
     document.body.style.overflowY = 'auto';
+}
+
+/*
+ *  Random lines generator
+ */
+
+function randomStringMap() {
+    let parentElement = document.getElementById('string-map');
+    if (parentElement == null) {
+        return;
+    }
+
+    let totalHeight = document.body.scrollHeight;
+    parentElement.style.height = totalHeight + 'px';
+    let heightPart = totalHeight / parentElement.children.length;
+
+    for (let i = 0; i < parentElement.children.length; i++) {
+        let child = parentElement.children[i];
+        let rotateValue = (i%2) == 1 ? -5 + (Math.random() * -25) : 5 + (Math.random() * 25);
+        let yValue = ((i+1) * heightPart) - 50 + (Math.random() * 101);
+        child.style.transform = `rotate(${rotateValue}deg) translateY(${yValue}px)`
+    }
 }
