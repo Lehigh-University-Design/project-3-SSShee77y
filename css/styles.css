@@ -655,6 +655,9 @@ nav {
         right: 0 !important;
         transform: translate(0, 0) !important;
     }
+    .absolute-container {
+        height: auto !important;
+    }
 
     #wide-nav {
         /* overflow: hidden; */
