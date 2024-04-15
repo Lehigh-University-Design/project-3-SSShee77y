@@ -4,6 +4,11 @@ window.addEventListener('load', function () {
     randomStringMap();
 });
 
+window.addEventListener('scroll', function() {
+    let scrollPosition = window.scrollY;
+    parallaxStringMap(scrollPosition / 5);
+});
+
 /*
  *  Wet Weather Manager
  */
@@ -103,19 +108,31 @@ function closePopUp() {
  */
 
 function randomStringMap() {
-    let parentElement = document.getElementById('string-map');
-    if (parentElement == null) {
+    let stringMap = document.getElementById('string-map');
+    if (stringMap == null) {
         return;
     }
 
     let totalHeight = document.body.scrollHeight;
-    parentElement.style.height = totalHeight + 'px';
-    let heightPart = totalHeight / parentElement.children.length;
+    stringMap.style.height = totalHeight + 'px';
+    let heightPart = totalHeight / stringMap.children.length;
 
-    for (let i = 0; i < parentElement.children.length; i++) {
-        let child = parentElement.children[i];
+    for (let i = 0; i < stringMap.children.length; i++) {
+        let child = stringMap.children[i];
         let rotateValue = (i%2) == 1 ? -5 + (Math.random() * -25) : 5 + (Math.random() * 25);
         let yValue = ((i+1) * heightPart) - 50 + (Math.random() * 101);
         child.style.transform = `rotate(${rotateValue}deg) translateY(${yValue}px)`
+    }
+}
+
+function parallaxStringMap(scrollFactor) {
+    let stringMap = document.getElementById('string-map');
+    if (stringMap == null) {
+        return;
+    }
+
+    for (let i = 0; i < stringMap.children.length; i++) {
+        let child = stringMap.children[i];
+        child.style.top = `${scrollFactor}px`;
     }
 }
