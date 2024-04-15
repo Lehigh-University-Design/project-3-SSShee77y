@@ -61,10 +61,6 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, ul, ol, li {
     font-style: normal;
 }
 
-img {
-    transition: all 0.3s ease 0s;
-}
-
 button {
     border: none;
     border-radius: 10px;
