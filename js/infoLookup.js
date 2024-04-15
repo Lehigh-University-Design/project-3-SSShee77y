@@ -90,23 +90,18 @@ const infoMap = new Map([
         ['images/evidence-black-tie.svg',
         'FBI agents found a black clip-on necktie in seat 18-E, where Cooper had been seated. Attached to the tie was a gold tie-clip with a circular mother-of-pearl setting in the center of the clip. The FBI built a partial DNA profile from samples found on Cooper\'s tie by 2001.']],
     ['Hair samples',
-        [,
-            
-        ]],
+        ['images/evidence-xmark.svg',
+        'FBI agents found two hair samples in Cooper\'s seat: a single strand of limb hair on the seat, and a single strand of brown Caucasian head hair on the headrest. In 2002, when attempting DNA profiling, the FBI discovered the hair sample had been lost.']],
     ['Cigarette butts',
-        [,
-            
-        ]],
+        ['images/evidence-xmark.svg',
+        'In the armrest ashtray, FBI agents found eight Raleigh filter tipped cigarette butts, but the investigators were unable to find fingerprints. In 1998, the FBI sought to extract DNA from the cigarette butts, but discovered the butts had been destroyed.']],
     ['Recovered parachutes',
         ['images/evidence-parachute-bag.svg',
-            
-        ]],
+        'FBI agents found one set of parachutes left behind by Cooper. However, the one Cooper selected for his jump was the older and potentially inferior military parachute as his main chute, signifying prior parachuting or military experience.']],
     ['727 instruction placard',
         ['images/evidence-placard.svg',
-            
-        ]],
+        'In November 1978, a hunter found the 727\'s instruction placard for lowering the aft airstair. The placard was found near a logging road about 13 miles (21 km) east of Castle Rock, Washington, and north of Lake Merwin, within Flight 305\'s basic flight path']],
     ['Recovered ransom money',
         ['images/evidence-singular-bill.svg',
-            
-        ]],
+        'On February 10, 1980, eight-year-old Brian Ingram was vacationing with his family on the Columbia River at a location called Tina Bar. The ransom money had matching serial numbers and totaled to $5,880. However, the money raised far more questions than it answered.']],
 ]);
