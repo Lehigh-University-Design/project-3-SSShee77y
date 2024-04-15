@@ -513,7 +513,7 @@ nav {
         margin: 0;
     }
     h3 {
-        font-weight: 500;
+        font-weight: 400;
         font-size: 23px;
         margin-block: 5px 25px;
     }
@@ -557,11 +557,11 @@ nav {
 .paragraph-div {
     width: 900px;
     padding-inline: calc((100vw - 900px) / 2);
-    padding-block: 30px 150px;
+    padding-block: 30px 120px;
     background-color: var(--color-light);
     h2 {
         font-size: 32px;
-        font-weight: 350;
+        font-weight: 400;
         grid-column: span 3;
         text-align: center;
         margin-bottom: 35px;
@@ -573,7 +573,7 @@ nav {
         color: var(--color-dark);
     }
     h3 {
-        font-weight: 500;
+        font-weight: 400;
         font-size: 23px;
         margin-block: 40px 20px;
     }
@@ -581,6 +581,13 @@ nav {
         font-size: 15px;
         line-height: 150%;
         margin-left: 30px;
+    }
+}
+
+.paragraph-div:nth-child(even) {
+    h2, h3, p {
+        font-weight: 350;
+        color: var(--color-light);
     }
 }
 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <script src="js/infoLookup.js"></script>
+    <title>D.B. Cooper</title>
+</head>
+<body style="overflow-y: auto">
+    <div id="fade-overlay"></div>
+    <div id="string-map">
+        <div class="string"></div>
+        <div class="string"></div>
+        <div class="string"></div>
+        <div class="string"></div>
+        <div class="string"></div>
+        <div class="string"></div>
+    </div>
+
+    <div class="content">
+        <header>
+            <nav id="side-nav">
+                <a href="#" onclick="fadeToRedirect('index.html')">Home</a>
+                <a href="#" onclick="fadeToRedirect('timeline.html')">Timeline</a>
+                <a href="#" onclick="fadeToRedirect('suspects.html')">Suspects</a>
+                <a href="#" onclick="fadeToRedirect('evidence.html')">Evidence</a>
+                <a href="#" class="active">Legacy</a>
+            </nav>
+            <nav id="wide-nav">
+                <h1>D.B. Cooper</h1>
+                <a href="#" onclick="fadeToRedirect('index.html')">Home</a>
+                <a href="#" onclick="fadeToRedirect('timeline.html')">Timeline</a>
+                <a href="#" onclick="fadeToRedirect('suspects.html')">Suspects</a>
+                <a href="#" onclick="fadeToRedirect('evidence.html')">Evidence</a>
+                <a href="#" class="active">Legacy</a>
+            </nav>
+            <a href="#" id="nav-button" onclick="toggleSidebar()">
+                <img id="nav-icon" src="images/nav-dropdown-icon.svg" width="30px">
+            </a>
+        </header>
+
+        <div class="paragraph-div" style="background-color: transparent;">
+            <h2>Anti-Hijacking Protocols</h2>
+            <h3>Suspendisse a auctor quam</h3>
+            <p>Cooper's hijacking, and several copycat hijackers, prompted major upgrades to security measures for airports and commercial aviation. The U.S. government established the first anti-hijacking security protocols, preventing hijackers from getting on aircraft in the first place. The measures included a hijacker profile, metal detectors, X-ray machines, baggage inspection became mandatory, and passengers who paid cash for tickets on the day of departure were selected for additional scrutiny.
+            <br><br>These protocols put in place in response to hijackings in the 1970s helped laid the foundation of modern aviation security standards. </p>
+            <h3>Aerial Retrofits</h3>
+            <p>Boeing 727s and similar aircraft were retrofitted with "Cooper vanes" to specifically prevent the ventral stairs of the aircraft from being lowered. It consists of a spring-loaded paddle connected to a plate that, as the aircraft takes off, the airflow pushes the paddle parallel to the fuselage and the plate is moved underneath the stairway, preventing the stairs from being lowered.</p>
+        </div>
+        
+
+        <div class="paragraph-div">
+            <h2>Pop Culture & Media</h2>
+            <h3>Skyborne Robin Hood</h3>
+            <p>D.B. Cooper's daring heist captured the public's imagination and became a cultural phenomenon, inspiring numerous depictions and references in media, literature, music, and art, and each interpretation offering its own speculation and theories. The enduring allure of the D.B. Cooper case has cemented its place in American folklore, with the hijacker's name becoming synonymous with mystery and intrigue. Some even compare Cooper to a modern day robin hood,  peculating that he may have used it to help others or support a cause.</p>
+            <h3>And the nominations are...</h3>
+            <p>Characters inspired by D.B Cooper have appeared in the story lines of many television series, such as Prison Break, Justified, The Blacklist, NewsRadio, Leverage, Journeyman, Renegade, Numb3rs, Quincy, M.E., 30 Rock, Drunk History, Breaking Bad, and Loki, as well as the 1981 film The Pursuit of D. B. Cooper.</p>
+        </div>
+        
+        <div class="paragraph-div" style="background-color: transparent;">
+            <h2>Cooper Con</h2>
+            <p>CooperCon is an annual gathering of enthusiasts, investigators, authors, and experts dedicated to unraveling the mysteries surrounding the D.B. Cooper case. Founded in 2011 by Eric Ulis, CooperCon provides a forum for individuals interested in the case to come together and collaborate on the case.
+            <br><br>The event also features presentations, panel discussions, and workshops on various aspects of the case, including theories, evidence, and potential leads. CooperCon fosters a sense of community among those passionate about the D.B. Cooper mystery.</p>
+        </div>
+
+        <div id="info-popup" class="ignore" onclick="closePopUp()">
+            <div id="info-popup-grid">
+                <img src="images/suspect-dayton.svg">
+                <h3>Barbara Dayton</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nemo unde culpa ratione distinctio numquam itaque repellat laboriosam quae illo voluptate saepe soluta laudantium tempore porro voluptatibus dolores assumenda molestiae, autem quis ut. Autem voluptates vero quisquam perspiciatis, ratione nihil optio quibusdam deleniti voluptas a ullam nemo porro, amet nostrum?</p>
+            </div>
+        </div>
+        
+        <script src="js/evidence.js"></script>
+
+    </div>
+    <div id="storm-container"></div>
+</body>
+</html>
