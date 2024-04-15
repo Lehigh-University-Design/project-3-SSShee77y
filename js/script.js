@@ -84,11 +84,15 @@ function popUpInfo(id) {
     let popup = document.getElementById('info-popup');
     let popupGrid = popup.querySelector('div');
 
-    let suspectInfo = getInfoForID(id);
-    let suspectName = suspectInfo[0].split('<br>')[0] + ' ' + suspectInfo[0].split('<br>')[1];
-    popupGrid.querySelector('h3').innerHTML = suspectName;
-    popupGrid.querySelector('img').src = suspectInfo[1][0];
-    popupGrid.querySelector('p').innerHTML = suspectInfo[1][1];
+    let objectInfo = getInfoForID(id);
+    let infoSplit = objectInfo[0].split('<br>')
+    let objectName = infoSplit[0];
+    if (infoSplit[1] != null) {
+        objectName += ' ' + infoSplit[1];
+    }
+    popupGrid.querySelector('h3').innerHTML = objectName;
+    popupGrid.querySelector('img').src = objectInfo[1][0];
+    popupGrid.querySelector('p').innerHTML = objectInfo[1][1];
 
     popup.style.opacity = 1;
     popup.classList.toggle('ignore');
@@ -115,13 +119,20 @@ function randomStringMap() {
 
     let totalHeight = document.body.scrollHeight;
     stringMap.style.height = totalHeight + 'px';
-    let heightPart = totalHeight / stringMap.children.length;
+    let totalStrings = totalHeight / 500;
 
-    for (let i = 0; i < stringMap.children.length; i++) {
+    for (let i = 0; i < totalStrings; i++) {
+        let newString = document.createElement('div');
+        newString.classList.add('string');
+        stringMap.appendChild(newString);
+    }
+
+    let heightPart = totalHeight / totalStrings;
+    for (let i = 0; i < totalStrings; i++) {
         let child = stringMap.children[i];
         let rotateValue = (i%2) == 1 ? -5 + (Math.random() * -25) : 5 + (Math.random() * 25);
         let yValue = ((i+1) * heightPart) - 50 + (Math.random() * 101);
-        child.style.transform = `rotate(${rotateValue}deg) translateY(${yValue}px)`
+        child.style.transform = `translateY(${yValue}px) rotate(${rotateValue}deg)`
     }
 }
 
