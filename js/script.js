@@ -2,11 +2,22 @@ window.addEventListener('load', function () {
     waterManager();
     setFader(0);
     randomStringMap();
+    // addBulletinEffects();
 });
 
 window.addEventListener('scroll', function() {
     let scrollPosition = window.scrollY;
     // parallaxStringMap(scrollPosition / 5);
+});
+
+var cursor = null;
+document.addEventListener('mousemove', (e) => {
+    if (cursor == null) {
+        cursor = document.querySelector('.custom-cursor');
+        return;
+    }
+    cursor.style.left = (e.clientX - cursor.offsetWidth / 2) + 'px';
+    cursor.style.top = (e.clientY - cursor.offsetHeight / 2) + 'px';
 });
 
 /*
@@ -146,4 +157,34 @@ function parallaxStringMap(scrollFactor) {
         let child = stringMap.children[i];
         child.style.top = `${scrollFactor}px`;
     }
+}
+
+/*
+ *  Hover bulletin effects
+ */
+
+function addBulletinEffects() {
+    var bulletinList = document.querySelectorAll(".suspect-bulletin,.evidence-bulletin");
+
+    for (let bulletin of bulletinList) {
+        bulletin.addEventListener('mouseover', (e) => {
+            let mouseX = e.clientX;
+            let mouseY = e.clientY;
+            let bulletinRect = bulletin.getBoundingClientRect();
+
+            // Calculate the distance between the mouse and the center of the container
+            let xFac = mouseX - (bulletinRect.left + bulletinRect.width / 2);
+            let yFac = mouseY - (bulletinRect.top + bulletinRect.height / 2);
+            xFac = (xFac / bulletinRect.width*60);
+            yFac = (yFac / bulletinRect.height*60);
+            // console.log(xFac + ", " + yFac);
+            bulletin.style.transform = `rotateX(${-yFac}deg) rotateY(${xFac}deg)`;
+            console.log(bulletin.style.transform);
+
+        });
+        bulletin.addEventListener('mouseout', () => {
+            bulletin.style.transform = '';
+        });
+    }
+    
 }

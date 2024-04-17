@@ -36,11 +36,22 @@
     transition: all .6s ease-in 0s;
 }
 
+/* .custom-cursor {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: radial-gradient(#eeeeee80, #eeeeee20 40%, transparent 70%);
+    pointer-events: none;
+    z-index: 500;
+    transition: transform 0.1s ease;
+} */
+
 ::-webkit-scrollbar {
     width: 0px;
 }
 
-html {
+html, body {
     scroll-behavior: smooth;
 }
 
@@ -147,6 +158,7 @@ button {
 
 /* Navigation */
 nav {
+    user-select: none;
     h1 {
         font-size: 36px;
         /* font-family: "Roboto", sans-serif; */
@@ -154,6 +166,7 @@ nav {
         padding: 0 10px;
         margin: 0;
         /* z-index: 100; */
+        pointer-events: none;
     }
     a {
         font-weight: 300;
@@ -165,11 +178,13 @@ nav {
         /* z-index: 100; */
     }
     a:hover {
-        font-weight: 600;
+        font-weight: 700;
+        transform: translateY(-4px);
     }
     a.active {
-        font-weight: 600;
-        border-bottom: 3px solid var(--color-light);
+        font-weight: 700;
+        border-bottom: 2px solid var(--color-light);
+        transform: translateY(0px);
     }
 }
 
@@ -217,6 +232,8 @@ nav {
 
 /* Homepage */
 #home-title {
+    pointer-events: none;
+    user-select: none;
     width: 1200px;
     max-width: calc(100% - 40px);
     position: absolute;
@@ -266,6 +283,7 @@ nav {
             margin-block: 45px 30px;
         }
         button {
+            pointer-events: all;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -458,6 +476,10 @@ nav {
     }
 }
 
+.suspect-bulletin:hover {
+    transform: scale(1.04);
+}
+
 #info-popup {
     position: fixed;
     display: flex;
@@ -559,6 +581,10 @@ nav {
         grid-row: span 2;
         align-self: center;
     }
+}
+
+.evidence-bulletin:hover {
+    transform: scale(1.04);
 }
 
 .evidence-bulletin:nth-child(odd) {
