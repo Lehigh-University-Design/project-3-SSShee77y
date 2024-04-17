@@ -1,4 +1,12 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29kaW5nYWxlbGVvMjYiLCJhIjoiY2x1anNxcGNnMGQ0ZzJucjBkc3M3Nml3eCJ9.ZLAvpZ2wIAw8jPVbgcKIFA';
+
+// Timeline stuff
+const eventInfo = document.getElementById('timeline-info');
+const timeline = document.getElementById('timeline');
+
+eventInfo.style.fontSize = '36px';
+eventInfo.style.fontWeight = '400';
+
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/codingaleleo26/clublyh0k01x601nwb3f6ci8i',
@@ -23,19 +31,6 @@ map.on('load', () => {
             'circle-stroke-width': 2,
             'circle-color': '#808080',
             'circle-stroke-color': '#eeeeee'
-        },
-        'filter': ['==', '$type', 'Point']
-    });
-
-    map.addLayer({
-        'id': 'poi-labels',
-        'type': 'circle',
-        'source': 'poi',
-        'layout': {
-            'text-field': ['get', 'name'],
-            'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
-            'text-radial-offset': 0.5,
-            'text-justify': 'auto'
         },
         'filter': ['==', '$type', 'Point']
     });
@@ -87,19 +82,19 @@ map.on('load', () => {
         'filter': ['==', 'name', 'Suspected Drop Zone']
     });
 
-    const eventInfo = document.getElementById('timeline-info');
-    const timeline = document.getElementById('timeline');
-
     document.getElementById('e-01').addEventListener('click', function() {
         map.flyTo({
             center: [-122.803, 46.489],
             zoom: 7.5,
             bearing: 90,
             pitch: 30,
-            essential: true
+            essential: true,
+            duration: 4000,
         });
         timeline.style.transform = 'translateX(0px)'
-        eventInfo.innerHTML = 'The NORJAK Case (D.B. Cooper)'
+        eventInfo.style.fontSize = '36px';
+        eventInfo.style.fontWeight = '400';  
+        eventInfo.innerHTML = 'The NORJAK Case<br>[D.B. Cooper]'
     });
     document.getElementById('e-02').addEventListener('click', function() {
         map.flyTo({
@@ -107,9 +102,12 @@ map.on('load', () => {
             zoom: 12,
             bearing: 0,
             pitch: 30,
-            essential: true
+            essential: true,
+            duration: 4000,
         });
         timeline.style.transform = 'translateX(-190px)'
+        eventInfo.style.fontSize = '18px';
+        eventInfo.style.fontWeight = '300';
         eventInfo.innerHTML = 'A man with a briefcase going by the name Dan Cooper purchased a one way ticket for Seattle, Washington at Portland International Airport, boarding Northwest Airlines Flight 305.'
     });
     document.getElementById('e-03').addEventListener('click', function() {
@@ -118,7 +116,8 @@ map.on('load', () => {
             zoom: 12,
             bearing: 0,
             pitch: 30,
-            essential: true
+            essential: true,
+            duration: 3000,
         });
         timeline.style.transform = 'translateX(-380px)'
         eventInfo.innerHTML = 'Once the flight took off, Cooper passed a note to flight attendant Florence Schaffner which stated that he had a bomb and would want the flight attendant to sit next to him.'
@@ -129,10 +128,107 @@ map.on('load', () => {
             zoom: 12,
             bearing: 0,
             pitch: 30,
-            essential: true
+            essential: true,
+            duration: 5000,
         });
         timeline.style.transform = 'translateX(-570px)'
         eventInfo.innerHTML = 'Cooper showed the briefcase with the bomb and told Schaffner his demands: $200,000 in negotiable American currency in a knapsack, two front parachutes, and two back parachutes by 5 PM.'
+    });
+    document.getElementById('e-05').addEventListener('click', function() {
+        map.flyTo({
+            center: [-122.302697, 47.443570], 
+            zoom: 10,
+            bearing: 70,
+            pitch: 30,
+            essential: true,
+            duration: 5000,
+        });
+        timeline.style.transform = 'translateX(-760px)'
+        eventInfo.innerHTML = 'Flight 305 went into a holding pattern over Seattle as ground control at the Seattle-Tacoma International Airport began discussing the matter with the crew of the 727 while procuring the demands.'
+    });
+    document.getElementById('e-06').addEventListener('click', function() {
+        map.flyTo({
+            center: [-122.302697, 47.443570], 
+            zoom: 12,
+            bearing: 90,
+            pitch: 30,
+            essential: true,
+            duration: 3000,
+        });
+        timeline.style.transform = 'translateX(-950px)'
+        eventInfo.innerHTML = 'Flight 305 touches down in Seattle, and Cooper allows the 36 passengers (most of whom did not know they had been hijacked) to leave the plane in exchange for the ransom money and parachutes.'
+    });
+    document.getElementById('e-07').addEventListener('click', function() {
+        map.flyTo({
+            center: [-122.302697, 47.443570], 
+            zoom: 12,
+            bearing: 90,
+            pitch: 30,
+            essential: true,
+            duration: 3000,
+        });
+        timeline.style.transform = 'translateX(-1140px)'
+        eventInfo.innerHTML = 'After a delay in refueling, Cooper became impatient and wanted to "get this show on the road." He then told the cockpit crew his flight plan: a path toward Mexico City at 100 knots and maximum 10,000 foot altitude with the landing gears deployed, wing flaps at 15 degrees, and the cabin unpressurized.'
+    });
+    document.getElementById('e-08').addEventListener('click', function() {
+        map.flyTo({
+            center: [-122.302697, 47.443570], 
+            zoom: 10,
+            bearing: 70,
+            pitch: 30,
+            essential: true,
+            duration: 4000,
+        });
+        timeline.style.transform = 'translateX(-1330px)'
+        eventInfo.innerHTML = 'Flight 305 takes off from Seattle, with Cooper and the pilots agreeing on heading south towards Reno as a refueling stop, as there was not enough fuel for Mexico City.'
+    });
+    document.getElementById('e-09').addEventListener('click', function() {
+        map.flyTo({
+            center: [-122.6506, 46.0871],
+            zoom: 10,
+            bearing: 45,
+            pitch: 30,
+            essential: true,
+            duration: 4000,
+        });
+        timeline.style.transform = 'translateX(-1520px)'
+        eventInfo.innerHTML = 'After Cooper told the flight attendant to go into the cockpit and not to return, he opened the rear staircase of the plane.'
+    });
+    document.getElementById('e-10').addEventListener('click', function() {
+        map.flyTo({
+            center: [-122.541, 45.894],
+            zoom: 10.5,
+            bearing: 60,
+            pitch: 30,
+            essential: true,
+            duration: 5000,
+        });
+        timeline.style.transform = 'translateX(-1710px)'
+        eventInfo.innerHTML = 'The aircraft experienced a sudden upward movement, causing the flight crew to assume that Cooper had jumped from the rear of the plane.'
+    });
+    document.getElementById('e-11').addEventListener('click', function() {
+        map.flyTo({
+            center: [-119.771395, 39.499964],
+            zoom: 10,
+            bearing: 65,
+            pitch: 30,
+            essential: true,
+            duration: 5000,
+        });
+        timeline.style.transform = 'translateX(-1900px)'
+        eventInfo.innerHTML = 'The plane lands safely at Reno-Tahoe International Airport and the police search the plane, hesitant of the hijacker and bomb. They, however, find neither Cooper, the bomb, or the ransom money.'
+    });
+    document.getElementById('e-12').addEventListener('click', function() {
+        map.flyTo({
+            center: [-122.543, 45.934],
+            zoom: 11.5,
+            bearing: 85,
+            pitch: 30,
+            essential: true,
+            duration: 5000,
+        });
+        timeline.style.transform = 'translateX(-2090px)'
+        eventInfo.innerHTML = 'The FBI determined and searched the approximate landing zone of Cooper\'s jump, but after a lengthy investigation, cannot find any additional clues on Cooper\'s (or the ransom money\'s) whereabouts.'
     });
 });
 
