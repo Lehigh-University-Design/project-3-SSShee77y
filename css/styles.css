@@ -324,11 +324,12 @@ nav {
     display: flex;
     width: 500px;
     max-width: 100%;
-    /* overflow-x: auto; */
-    overflow-x: hidden;
+    overflow-x: auto;
+    /* overflow-x: hidden; */
     scrollbar-width: none;
     -ms-overflow-style: none;
     z-index: 1;
+    transition: scroll 0.9s ease-in-out 0s;
 }
 #timeline-container::-webkit-scrollbar {
     display: none;
@@ -384,12 +385,12 @@ nav {
         margin: -2px;
         border-top: 6px solid var(--color-light);
     }
-    .line:first-child{
-        width: 217px;
+    .line:first-of-type {
+        width: min(217px, calc(50vw - 20px));
         border-top-color: transparent;
     }
-    .line:last-child {
-        width: 247px;
+    .line:last-of-type {
+        width: min(247px, calc(50vw - 20px));
         border-top-color: transparent;
     }
 }
@@ -771,6 +772,9 @@ nav {
     
     #timeline {
 
+    }
+    #timeline-info {
+        transform: translateX(0);
     }
 
     /* Suspects */
