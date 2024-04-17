@@ -235,9 +235,9 @@ nav {
     }
     #home-image {
         position: absolute;
-        top: calc(50% - 370px);
-        left: calc(40% - 350px);
-        width: 680px;
+        top: calc(50% - 350px);
+        left: calc(40% - 330px);
+        width: 750px;
         max-height: 120%;
         opacity: 0.4;
         transition: all 0.1s ease-out 0s;
@@ -767,6 +767,15 @@ nav {
     .evidence-bulletin:nth-child(odd) {
         img, p {
             order: 0;
+        }
+    }
+
+    .paragraph-div {
+        h3 {
+            text-align: center;
+        }
+        p {
+            margin-left: 0px;
         }
     }
     
