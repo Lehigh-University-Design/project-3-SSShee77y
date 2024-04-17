@@ -21,6 +21,18 @@ window.addEventListener('mousemove', function(e) {
     image.style.transform = `translate(${-distanceX/8}px, ${-distanceY/20}px)`;
 });
 
+// Quick hotfix lol
+// setInterval(trackCooperText, 100);
+function trackCooperText() {
+    let cooperText = document.getElementById('cooper-name');
+
+    if (window.innerWidth < 650) {
+        cooperText.style.width = 'min-content';
+    } else {
+        cooperText.style.width = 'max-content';
+    }
+}
+
 var cooperImage, ctaButton, fadeOverlay;
 function homeCTAButton() {
     cooperImage = document.getElementById('home-image');

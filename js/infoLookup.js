@@ -37,47 +37,46 @@ const infoMap = new Map([
     // Suspects
     ['Richard<br>McCoy Jr.',
         ['images/suspect-mccoy.svg',
-        'McCoy hijacked a plane in 1972 using a similar method to Cooper\'s and was arrested. Some believed he could be Cooper, but he was killed in a shootout with law enforcement in 1974.']],
+        'Suspected due to similarities between the DB Cooper and McCoy hijackings, including the manner of operation and demands.'
+        + '<br><br>Richard McCoy Jr. was a former Green Beret and a helicopter pilot in the Army during the Vietnam War. He was discharged from the Army due to injuries sustained in combat. McCoy later became known as a copycat hijacker after he successfully hijacked a plane in 1972 using methods similar to those employed by DB Cooper.'
+        + '<br><br><b>Traits matching Cooper:</b> Experience as a pilot and military background.'
+        + '<br><br><b>Traits not matching:</b> His alibi for the DB Cooper incident was verified.'
+        + '<br><br><b>Outcome:</b> Shot and killed by law enforcement officers during an attempted escape from prison in 1974.']],
     ['Robert<br>Rackstraw',
         ['images/suspect-rackstraw.svg',
-        'A Vietnam War veteran with a criminal record who boasted about being Cooper. Investigators looked into him extensively but found insufficient evidence to charge him.'
-        + '<br><br>Lorem ipsum dolor sit amet. Consectetur adipiscing elit. Etiam vel enim nibh. Curabitur egestas turpis in mauris malesuada interdum. Duis nec pellentesque leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae:'
-        + '<ul><li>Nulla facilisi</li>'
-        + '<li>Vestibulum libero</li>'
-        + '<li>Dapibus luctus</li></ul>'
-        + 'Donec iaculis, risus et sagittis posuere, magna tellus sollicitudin nulla, quis convallis leo augue vel tellus. Maecenas libero magna, finibus commodo elit gravida, vestibulum tristique massa. Maecenas vehicula vehicula euismod. Vestibulum pretium sed eros laoreet accumsan.']],
+        'Suspected due to his background as a Vietnam War veteran with parachute training.'
+        + '<br><br>Robert Rackstraw was a Vietnam War veteran and a helicopter pilot with experience in special operations. He had a criminal record for fraud and was known for his intelligence and manipulative behavior.'
+        + '<br><br><b>Traits matching Cooper:</b> Military experience, knowledge of parachuting.'
+        + '<br><br><b>Traits not matching:</b> Rackstraw\'s whereabouts at the time of the hijacking are unclear, and he denied involvement.'
+        + '<br><br><b>Outcome:</b> Rackstraw lived until 2019, and despite being investigated multiple times, no conclusive evidence linked him to the DB Cooper case.']],
     ['Duane<br>Weber',
         ['images/suspect-weber.svg',
-        'Weber\'s wife claimed he confessed to her on his deathbed, and his resemblance to composite sketches led to speculation. Additionally, Weber had military experience and a criminal history.'
-        + '<br><br>Lorem ipsum dolor sit amet. Consectetur adipiscing elit. Etiam vel enim nibh. Curabitur egestas turpis in mauris malesuada interdum. Duis nec pellentesque leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae:'
-        + '<ul><li>Nulla facilisi</li>'
-        + '<li>Vestibulum libero</li>'
-        + '<li>Dapibus luctus</li></ul>'
-        + 'Donec iaculis, risus et sagittis posuere, magna tellus sollicitudin nulla, quis convallis leo augue vel tellus. Maecenas libero magna, finibus commodo elit gravida, vestibulum tristique massa. Maecenas vehicula vehicula euismod. Vestibulum pretium sed eros laoreet accumsan.']],
+        'Suspected due to his wife\'s claim that he confessed to being DB Cooper on his deathbed.'
+        + '<br><br>Duane Weber was born in 1924 and served in the Navy during World War II. He had a history of criminal behavior, including theft and forgery. Weber married multiple times and lived a transient lifestyle.'
+        + '<br><br><b>Traits matching Cooper:</b> Mysterious past, possible military background.'
+        + '<br><br><b>Traits not matching:</b> Conflicting alibi for the time of the hijacking.'
+        + '<br><br><b>Outcome:</b> Died in 1995, and his wife\'s claim remains the primary basis for suspicion, but no definitive evidence ties him to the crime.']],
     ['Kenneth<br>Christiansen',
         ['images/suspect-christiansen.svg',
-        'A former airline employee with parachute experience and a resemblance to composite sketches of D.B. Cooper. His brother claimed Christiansen confessed to being Cooper on his deathbed.'
-        + '<br><br>Lorem ipsum dolor sit amet. Consectetur adipiscing elit. Etiam vel enim nibh. Curabitur egestas turpis in mauris malesuada interdum. Duis nec pellentesque leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae:'
-        + '<ul><li>Nulla facilisi</li>'
-        + '<li>Vestibulum libero</li>'
-        + '<li>Dapibus luctus</li></ul>'
-        + 'Donec iaculis, risus et sagittis posuere, magna tellus sollicitudin nulla, quis convallis leo augue vel tellus. Maecenas libero magna, finibus commodo elit gravida, vestibulum tristique massa. Maecenas vehicula vehicula euismod. Vestibulum pretium sed eros laoreet accumsan.']],
+        'Suspected due to his background as a Northwest Airlines employee with knowledge of aircraft and parachutes.'
+        + '<br><br>Born in 1924, Kenneth Christiansen was a World War II veteran and a Northwest Airlines employee. He worked as a purser, responsible for flight crew coordination and passenger service.'
+        + '<br><br><b>Traits matching Cooper:</b> Aviation experience, familiarity with the Boeing 727 aircraft.'
+        + '<br><br><b>Traits not matching:</b> Lack of criminal record or known motive for hijacking.'
+        + '<br><br><b>Outcome:</b> Died in 1994, and his family discovered possible evidence, such as a large sum of money and a key after his death, but inconclusive proof linking him to the hijacking.']],
     ['William J.<br>Smith',
         ['images/suspect-smith.svg',
-        'A former Army paratrooper and explosives expert who confessed to being Cooper in a deathbed letter. However, his confession was considered dubious.'
-        + '<br><br>Lorem ipsum dolor sit amet. Consectetur adipiscing elit. Etiam vel enim nibh. Curabitur egestas turpis in mauris malesuada interdum. Duis nec pellentesque leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae:'
-        + '<ul><li>Nulla facilisi</li>'
-        + '<li>Vestibulum libero</li>'
-        + '<li>Dapibus luctus</li></ul>'
-        + 'Donec iaculis, risus et sagittis posuere, magna tellus sollicitudin nulla, quis convallis leo augue vel tellus. Maecenas libero magna, finibus commodo elit gravida, vestibulum tristique massa. Maecenas vehicula vehicula euismod. Vestibulum pretium sed eros laoreet accumsan.']],
+        'Suspected due to his resemblance to the DB Cooper composite sketch and the money in his possession after the hijacking.'
+        + '<br><br>William J. Smith was a World War II veteran who enlisted in the United States Navy, undergoing combat air crew training. He worked for the Lehigh Valley Railroad but was affected by Penn Central\'s bankruptcy.'
+        + '<br><br><b>Traits matching Cooper:</b> Physical resemblance to composite sketch, possession of money.'
+        + '<br><br><b>Traits not matching:</b> Limited evidence linking him to the hijacking, lack of corroborating testimony.'
+        + '<br><br><b>Outcome:</b> Died in 1980, and while his widow believed he was DB Cooper, no concrete evidence supports this claim.']],
     ['Barbara<br>Dayton',
         ['images/suspect-dayton.svg',
-        'Claimed to be D.B. Cooper in a book she wrote, alleging she underwent gender reassignment surgery after the hijacking. However, her story lacked corroborating evidence.'
-        + '<br><br>Lorem ipsum dolor sit amet. Consectetur adipiscing elit. Etiam vel enim nibh. Curabitur egestas turpis in mauris malesuada interdum. Duis nec pellentesque leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae:'
-        + '<ul><li>Nulla facilisi</li>'
-        + '<li>Vestibulum libero</li>'
-        + '<li>Dapibus luctus</li></ul>'
-        + 'Donec iaculis, risus et sagittis posuere, magna tellus sollicitudin nulla, quis convallis leo augue vel tellus. Maecenas libero magna, finibus commodo elit gravida, vestibulum tristique massa. Maecenas vehicula vehicula euismod. Vestibulum pretium sed eros laoreet accumsan.']],
+        'Suspected based on her gender identity, background in aviation, and her claims about being D.B. Cooper.'
+        + '<br><br>Barbara Dayton was a recreational pilot and University of Washington librarian. Assigned male at birth, but later underwent sex reassignment surgery, she served in the U.S. Merchant Marine and in the Army during World War II.'
+        + '<br><br><b>Traits matching Cooper:</b> Aviation knowledge and experience.'
+        + '<br><br><b>Traits not matching:</b> Lack of evidence tying her to the crime, and Dayton\'s physical description did not match.'
+        + '<br><br><b>Outcome:</b> Died in 2002 with no evidence being found to implicate her in the DB Cooper case.']],
 
     // Evidence
     
@@ -100,3 +99,9 @@ const infoMap = new Map([
         ['images/evidence-tina-bar-money.svg',
         'On February 10, 1980, eight-year-old Brian Ingram was vacationing with his family on the Columbia River at a location called Tina Bar. The ransom money had matching serial numbers and totaled to $5,880. However, the money raised far more questions than it answered.']],
 ]);
+
+        'TEMPORARTY'
+        + '<br><br>TEMPORARTY'
+        + '<br><br><b>Traits matching Cooper:</b> TEMPORARTY'
+        + '<br><br><b>Traits not matching:</b> TEMPORARTY'
+        + '<br><br><b>Outcome:</b> TEMPORARTY'
