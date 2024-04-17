@@ -233,11 +233,11 @@ nav {
         height: 100%;
         overflow: hidden;
     }
-    img {
+    #home-image {
         position: absolute;
-        top: calc(50% - 380px);
-        left: calc(40% - 400px);
-        width: 850px;
+        top: calc(50% - 370px);
+        left: calc(40% - 350px);
+        width: 680px;
         max-height: 120%;
         opacity: 0.4;
         transition: all 0.1s ease-out 0s;
@@ -371,13 +371,16 @@ nav {
     flex-direction: row;
     width: 100vw;
     height: fit-content;
-    padding-block: 40px 30px;
+    padding-block: 70px 60px;
     column-gap: 80px;
     row-gap: 20px;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    background-color: var(--color-light);
+    background-image: url('../images/paper-torn-bg-01.svg');
+    background-size: auto 100%; 
+    background-repeat: repeat-x;
+    background-position: center;
     img {
         width: 320px;
         max-width: 75%;
@@ -442,7 +445,10 @@ nav {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: var(--color-light);
+    /* background-color: var(--color-light); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     text-overflow: ellipsis;
     overflow: hidden;
     cursor: pointer;
@@ -470,14 +476,19 @@ nav {
         /* background-color: var(--color-light); */
         grid-template-rows: fit-content() fit-content();
         grid-template-columns: 1fr 2fr;
-        column-gap: 60px;
+        column-gap: 50px;
         img {
+            height: 350px;
             max-height: calc(100% - 100px);
             grid-row: span 2;
-            background-color: var(--color-light);
-            padding: 50px 50px;
+            padding: 80px 50px;
             margin-block: 20px;
             align-self: center;
+            /* background-color: var(--color-light); */
+            background-image: url('../images/paper-torn-bg-03.svg');
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: center;
         }
         h3 {
             align-self: flex-end;

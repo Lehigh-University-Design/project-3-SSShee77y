@@ -18,7 +18,7 @@ window.addEventListener('mousemove', function(e) {
     let distanceY = mouseY - imageY;
 
     // Translate image
-    image.style.transform = `translate(${-distanceX/5}px, ${-distanceY/5}px)`;
+    image.style.transform = `translate(${-distanceX/8}px, ${-distanceY/20}px)`;
 });
 
 var cooperImage, ctaButton, fadeOverlay;

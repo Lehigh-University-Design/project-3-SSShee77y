@@ -6,7 +6,7 @@ window.addEventListener('load', function () {
 
 window.addEventListener('scroll', function() {
     let scrollPosition = window.scrollY;
-    parallaxStringMap(scrollPosition / 5);
+    // parallaxStringMap(scrollPosition / 5);
 });
 
 /*
