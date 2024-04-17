@@ -588,7 +588,7 @@ nav {
     background-position: top;
     h2 {
         font-size: 32px;
-        font-weight: 400;
+        font-weight: 450;
         grid-column: span 3;
         text-align: center;
         margin-bottom: 35px;
@@ -618,6 +618,9 @@ nav {
     h2, h3, p {
         font-weight: 350;
         color: var(--color-light);
+    }
+    h2 {
+        font-weight: 450;
     }
 }
 
