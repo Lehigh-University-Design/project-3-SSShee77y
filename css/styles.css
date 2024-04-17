@@ -397,7 +397,7 @@ nav {
     }
 }
 
-#timeline-info {
+#timeline-info, #timeline-title {
     position: fixed;
     top: 200px;
     width: 800px;
@@ -409,6 +409,11 @@ nav {
     font-weight: 300;
     transition: all 0.3s ease 0s;
     transform: translateX(-15px);
+}
+#timeline-title {
+    font-size: 36px;
+    font-weight: 400;
+    transition: all 0.9s ease 0s;
 }
 
 /* Suspects Page */

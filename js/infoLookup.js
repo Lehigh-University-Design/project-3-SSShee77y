@@ -37,12 +37,7 @@ const infoMap = new Map([
     // Suspects
     ['Richard<br>McCoy Jr.',
         ['images/suspect-mccoy.svg',
-        'McCoy hijacked a plane in 1972 using a similar method to Cooper\'s and was arrested. Some believed he could be Cooper, but he was killed in a shootout with law enforcement in 1974.'
-        + '<br><br>Lorem ipsum dolor sit amet. Consectetur adipiscing elit. Etiam vel enim nibh. Curabitur egestas turpis in mauris malesuada interdum. Duis nec pellentesque leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae:'
-        + '<ul><li>Nulla facilisi</li>'
-        + '<li>Vestibulum libero</li>'
-        + '<li>Dapibus luctus</li></ul>'
-        + '>Donec iaculis, risus et sagittis posuere, magna tellus sollicitudin nulla, quis convallis leo augue vel tellus. Maecenas libero magna, finibus commodo elit gravida, vestibulum tristique massa. Maecenas vehicula vehicula euismod. Vestibulum pretium sed eros laoreet accumsan.']],
+        'McCoy hijacked a plane in 1972 using a similar method to Cooper\'s and was arrested. Some believed he could be Cooper, but he was killed in a shootout with law enforcement in 1974.']],
     ['Robert<br>Rackstraw',
         ['images/suspect-rackstraw.svg',
         'A Vietnam War veteran with a criminal record who boasted about being Cooper. Investigators looked into him extensively but found insufficient evidence to charge him.'
