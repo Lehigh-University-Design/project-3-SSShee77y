@@ -340,6 +340,7 @@ nav {
     content: '';
     position: absolute;
     margin-left: -1px;
+    z-index: 2;
     width: 150px;
     height: 120px;
     background: linear-gradient(to right, var(--color-dark) 5%, transparent);
@@ -350,6 +351,7 @@ nav {
     content: '';
     position: absolute;
     margin-left: calc(min(500px, 100%) - 149px);
+    z-index: 2;
     width: 150px;
     height: 120px;
     background: linear-gradient(to left, var(--color-dark) 5%, transparent);
