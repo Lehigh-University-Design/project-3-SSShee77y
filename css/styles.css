@@ -579,9 +579,13 @@ nav {
     justify-content: center;
     align-items: center;
     padding-inline: calc((100vw - min(900px, 90vw)) / 2);
-    padding-block: 30px 120px;
+    padding-block: 40px 120px;
     overflow: hidden;
-    background-color: var(--color-light);
+    /* background-color: var(--color-light); */
+    background-image: url('../images/paper-torn-bg-01.svg'); 
+    background-size: auto 100%; 
+    background-repeat: repeat-x;
+    background-position: top;
     h2 {
         font-size: 32px;
         font-weight: 400;
@@ -599,6 +603,9 @@ nav {
         font-weight: 400;
         font-size: 23px;
         margin-block: 40px 20px;
+    }
+    h3:first-of-type {
+        margin-top: 0px;
     }
     p {
         font-size: 15px;
