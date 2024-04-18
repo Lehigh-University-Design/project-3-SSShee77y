@@ -91,7 +91,11 @@ map.on('load', () => {
         });
         timeline.parentNode.scrollLeft = 0;
         timeline.style.transform = 'translateX(0px)';
-        timelineTitle.style.transform = 'translateY(0px)';
+        if (screen.width <= 1000) {
+            timelineTitle.style.transform = 'translateY(0px)';
+        } else {
+            timelineTitle.style.transform = 'translate(-15px, 0px)';
+        }
         timelineTitle.style.opacity = '1';
         eventInfo.innerHTML = '';
     });
